@@ -1,4 +1,4 @@
-public class Demo{
+public class QuickSort {
     public static int partition(int arr[],int low,int high){
         int pivot=arr[low];
         int i=low;
