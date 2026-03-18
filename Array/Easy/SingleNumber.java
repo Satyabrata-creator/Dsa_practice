@@ -1,4 +1,19 @@
+
 public class SingleNumber{
+    public static int singleNumber(int []nums){
+        int XORR=0;
+        for(int i=0;i<nums.length;i++){
+            XORR^=nums[i];
+        }
+        return XORR;
+    }
+    public static void main(String[] args) {
+    int a[]={1,1,2,2,3,3,4,4,5,9,5};
+        int k=singleNumber(a);
+        System.out.println(k);
+    }
+}
+/*public class SingleNumber{
     public static int singleNumber(int []nums){
         for(int i=0;i<nums.length;i++){
                 int count=0;
@@ -14,8 +29,9 @@ public class SingleNumber{
         return 0;
     }
     public static void main(String[] args) {
-         int a[]={1,1,2,2,3,3,4,4,5,9,5};
+    int a[]={1,1,2,2,3,3,4,4,5,9,5};
         int k=singleNumber(a);
         System.out.println(k);
     }
 }
+*/
